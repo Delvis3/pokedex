@@ -1,7 +1,7 @@
 import React from 'react'
 import PokemonCard from './PokemonCard'
 
-const Pokemonlist = ({pokemons}) => {
+const PokemonList = ({pokemons}) => {
   return (
     <section className='px-10'>
     <section className='grid gap-3 grid-cols-[repeat(auto-fill,_375px)] justify-center'>
@@ -14,4 +14,4 @@ const Pokemonlist = ({pokemons}) => {
       )
 }
 
-export default Pokemonlist
+export default PokemonList

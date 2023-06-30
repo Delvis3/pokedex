@@ -2,8 +2,7 @@ import React, { useEffect, useState } from 'react'
 import Header from '../components/pokedex/Header'
 import { useSelector } from 'react-redux'
 import axios from 'axios'
-import Pokemonlist from '../components/pokedex/Pokemonlist'
-import PokemonName from './PokemonName'
+import PokemonList from '../components/pokedex/Pokemonlist'
 
 const Pokedex = () => {
 const [pokemons, setPokemons] = useState([])
@@ -16,7 +15,7 @@ const [currentType, setCurrentType] = useState("")
 const [curentPage, setCurentPage] = useState(1);
 
 const [types, setTypes] = useState([])
-console.log(types);
+console.log(types); 
   const nameTrainer = useSelector(store => store.nameTrainer)
 
   const pokemonsByName = pokemons.filter((pokemon) => pokemon.name.includes(namePokemon.toLowerCase().trim()) )
@@ -134,7 +133,7 @@ useEffect(() => {
             </select>
             </section>
       </form>
-    <Pokemonlist pokemons={pokemonsInPage}/>
+    <PokemonList pokemons={pokemonsInPage}/>
     <ul className='flex gap-3 justify-center py-4 px-2 flex-wrap'>
       <li onClick={handleClickPreviusPage} className={`p-3 bg-red-600 text-white rounded-md cursor-pointer`}>{"<"}</li>
           {
