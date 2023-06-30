@@ -4,6 +4,7 @@ import { useSelector } from 'react-redux'
 import axios from 'axios'
 import PokemonList from '../components/pokedex/Pokemonlist'
 
+
 const Pokedex = () => {
 const [pokemons, setPokemons] = useState([])
 //  console.log({pokemons});
@@ -133,7 +134,7 @@ useEffect(() => {
             </select>
             </section>
       </form>
-    <PokemonList pokemons={pokemonsInPage}/>
+    <PokemonList  pokemons={pokemonsInPage}/>
     <ul className='flex gap-3 justify-center py-4 px-2 flex-wrap'>
       <li onClick={handleClickPreviusPage} className={`p-3 bg-red-600 text-white rounded-md cursor-pointer`}>{"<"}</li>
           {
