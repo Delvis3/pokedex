@@ -79,6 +79,7 @@ useEffect(() => {
                              <img className='m-auto' src={pokemon?.sprites.other['official-artwork'].front_default} alt="" />
                         </div>
                          </div>
+                         {/* seccion de datos del pokemon */}
                 <section className='grid justify-center'>
                     <h3 className='border-2 p-0 text-center'>#{pokemon?.id}</h3>
                     <h1 className={`${pokeColorText[pokemon?.types[0].type.name]} grid justify-center`}>{pokemon?.name}</h1> 
@@ -91,6 +92,7 @@ useEffect(() => {
                                 <h2 className='grid justify-center text-base font-semibold'>Weight</h2>
                                 <h2 className=' grid justify-center'>{pokemon?.weight}</h2>
                             </div>
+                            {/* seccion de habilidades */}
                     </section>
                     <section className='grid grid-cols-2 gap-2 pt-3' >
                     <h2 className='grid justify-center text-base font-semibold'>Type</h2>

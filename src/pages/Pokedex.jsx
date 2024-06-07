@@ -55,9 +55,6 @@ for (let i = minPage; i <= maxPage; i++) {
   }
 }
 
-const handleClickPreviusPage = () => {
-
-}
 
 return {pokemonsInPage, lastPage, pagesInBlock}
  }
