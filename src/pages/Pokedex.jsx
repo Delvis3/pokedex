@@ -115,9 +115,9 @@ const Pokedex = () => {
     <main>
       <Header />
       <h3 className='grid justify-center'><span className='font-bold text-red-600'>Welcome {nameTrainer}! </span>here you can find your favorite pokemon</h3>
-
-      <form onSubmit={handleSubmit}>
-        <section className='grid grid-cols-[0.6fr,_0.2fr] justify-center'>
+<div className="menu">
+      <form  onSubmit={handleSubmit}>
+        <section id='pokedexMenu'>
           <div className=''>
             <input placeholder='Type a name pokemon' id='namePokemon' className='p-2 border' type='text' />
             <button className='bg-red-500 p-2 rounded-md'>Search</button>
@@ -131,6 +131,7 @@ const Pokedex = () => {
           </select>
         </section>
       </form>
+      </div>
       <PokemonList pokemons={pokemonsInPage} />
       <ul className='flex gap-3 justify-center py-4 px-2 flex-wrap'>
         <li onClick={handleClickPreviusPage} className={`p-3 bg-red-600 text-white rounded-md cursor-pointer`}>{"<"}</li>

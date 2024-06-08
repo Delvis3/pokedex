@@ -73,7 +73,7 @@ useEffect(() => {
     <main>
         <Header/>
         <section className='max-w-[705px] grid m-auto'>
-                <article className=' border-4 border-gray-200 mt-28 max-w-[410px] grid m-auto p-2'>
+                <article className=' border-2 border-gray-200 mt-28 max-w-[370px] grid m-auto p-2'>
                        <div className={`${pokeLinearGradients[pokemon?.types[0].type.name]} h-36`}>
                         <div className='relative -top-36 right-6 ml-16 px-16 py-20'>
                              <img className='m-auto' src={pokemon?.sprites.other['official-artwork'].front_default} alt="" />

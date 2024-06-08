@@ -1,0 +1,64 @@
+#pokedex{
+ width: 200px;
+ height: 40px;
+}
+
+#pokebolasalida{
+ width:60px;
+ height: 60px;
+}
+
+#pokedexMenu{
+ display: flex;
+ justify-content:center;
+ width: 90vw;
+ gap: 3px;
+ margin:0 auto;;
+ }
+
+ @media screen and (max-width: 450px) {
+  #pokedexMenu{
+   display:block;
+   margin:0 auto;
+   gap: 3px;
+   }
+ }
+
+@media screen and (min-width: 768px) {
+
+ #pokebola{
+  width:90px;
+  height: 90px;
+ }
+ 
+ #pokedex{
+  width: 400px;
+  height: 80px;
+ }
+  
+   
+ #barraRoja{
+height:70px ;
+ }
+
+ #barraNegra{
+  height:40px ;
+ }
+
+ #pokebolasalida{
+  width:80px;
+  height: 80px;
+ }
+
+#pokebolasalidaPosition{
+ position: absolute;
+ top: 45px;
+}
+
+#pokedexMenu{
+ display: flex;
+ justify-content: space-evenly;
+ width: 90vw;
+ }
+
+}
